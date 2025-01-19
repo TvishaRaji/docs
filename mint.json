@@ -7,9 +7,9 @@
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#F9924E",
+    "light": "#F9924E",
+    "dark": "#F9924E",
     "anchors": {
       "from": "#0D9373",
       "to": "#07C983"
@@ -25,12 +25,6 @@
     "name": "Dashboard",
     "url": "https://dashboard.mintlify.com"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
   "anchors": [
     {
       "name": "Documentation",
@@ -65,13 +59,9 @@
         "essentials/images",
         "essentials/settings",
         "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
+        "essentials/reusable-snippets",
+        "essentials/sample"
+
       ]
     },
     {
