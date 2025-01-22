@@ -50,12 +50,12 @@
     {
       "group": "API Guides",
       "pages": [
-        "essentials/google",
-        "essentials/openai",
-        "essentials/anthropic",
-        "essentials/xai",
-         "essentials/ollama",
-         "essentials/perplexity"
+        "api/google",
+        "api/openai",
+        "api/anthropic",
+        "api/xai",
+         "api/ollama",
+         "api/perplexity"
       ]
     }
   ],
