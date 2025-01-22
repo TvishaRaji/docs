@@ -54,8 +54,8 @@
         "api/openai",
         "api/anthropic",
         "api/xai",
-         "api/ollama",
-         "api/perplexity"
+        "api/ollama",
+        "api/perplexity"
       ]
     }
   ],
