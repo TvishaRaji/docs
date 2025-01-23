@@ -50,12 +50,12 @@
     {
       "group": "API Guides",
       "pages": [
-        "api/google",
-        "api/openai",
-        "api/anthropic",
-        "api/xai",
-        "api/ollama",
-        "api/perplexity"
+        "api-guides/google",
+        "api-guides/openai",
+        "api-guides/anthropic",
+        "api-guides/xai",
+        "api-guides/ollama",
+        "api-guides/perplexity"
       ]
     }
   ],
