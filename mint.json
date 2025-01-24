@@ -57,6 +57,11 @@
         "api-guides/ollama",
         "api-guides/perplexity"
       ]
+    },{
+      "group": "Rabbitholes Constructs",
+      "pages": [
+        "product-concept/config"
+      ]
     }
   ],
   "footerSocials": {
