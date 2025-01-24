@@ -2,8 +2,12 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "RabbitHoles",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/logo.png",
+    "light": "/logo/logo.png"
+  }, 
+  "topbarCtaButton": {
+    "name": "Try it Now!",
+    "url": "https://buy.stripe.com/6oEaGW9wzcxc09yeUU"
   },
   "favicon": "/favicon.svg",
   "colors": {
