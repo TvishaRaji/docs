@@ -1,0 +1,126 @@
+---
+title: "Model Configurations"
+description: "Learn how to set up your model configuration for your chosen models"
+
+---
+# **Configuring Model Settings for Each Model**
+
+This document outlines the steps to configure advanced model settings for each AI model in your application. Proper configuration ensures models generate optimal responses for different tasks, from generating creative content to precise information retrieval.
+
+## **What Are Model Metrics and Advanced Settings?**
+
+**Model metrics** refer to configurable parameters that determine how an AI model generates responses. By adjusting these metrics, you can fine-tune the model's behavior, creativity, and relevance to specific tasks. These settings allow control over:
+
+- The tone and style of responses.
+- The variability and randomness in outputs.
+- The extent of content repetition.
+
+**Advanced Model Settings** are options that go beyond basic configuration, providing granular control over the model’s decision-making process during text generation. They help tailor the output to meet precise requirements for various applications.
+
+### **Accessing Advanced Settings**
+
+To configure advanced settings:
+
+- Navigate to the **Advanced Settings** tab in the model configuration menu.
+
+<img
+  style={{ borderRadius: '0.5rem' }}
+  src="/images/config1.png"
+/>
+- Ensure you select the correct model instance before modifying parameters.
+
+For Eg : Let’s Modify **o1-preview** 
+
+<img
+  style={{ borderRadius: '0.5rem' }}
+  src="/images/config2.png"
+/>
+### **Understanding Configuration Parameters**
+
+### **System Prompt**
+
+- Defines the initial context or instructions given to the model.
+- Example: *“You are a helpful assistant that provides detailed explanations.”*
+- Use precise prompts tailored to the task for best results.
+
+### **Temperature**
+
+- Controls the randomness of responses.
+- Range: `0.0` (deterministic, least random) to `1.0` (highly creative, most random).
+- Recommended Usage:
+    - Low values (0.1–0.3) for factual, structured outputs.
+    - Higher values (0.7–1.0) for creative content generation.
+
+### **Top P (Nucleus Sampling)**
+
+- Limits responses to the smallest set of words with cumulative probability P.
+- Range: `0.0` to `1.0`.
+- Example: A value of `0.9` retains only the top 90% of likely choices, focusing generation on more probable tokens.
+
+### **Top K**
+
+- Limits model choices to the top K most probable next words.
+- Range: `0.0` to `1.0`.
+- Example: Setting `Top K = 0.70` restricts choices to the top K most likely tokens.
+
+### **Frequency Penalty**
+
+- Penalizes repeated words to encourage diverse output.
+- Range: `0` to `2.0`.
+    - **0 (No penalty)**:
+        - The model has no restrictions on repeating tokens.
+        - Common or repetitive words may appear frequently, possibly leading to redundancy.
+    - **1 (Moderate penalty)**:
+        - The model is moderately discouraged from using the same token too frequently.
+        - Text generation becomes more varied and less redundant.
+    - **2 (High penalty)**:
+        - Strong discouragement of repeated token usage.
+        - The model actively avoids using words that have already appeared multiple times, leading to greater lexical variety.
+
+### **Presence Penalty**
+
+- Encourages or discourages the model from mentioning new concepts.
+- Range: `0` to `2.0`.
+    - **0 (No penalty)**:
+        - The model does not penalize repeated tokens.
+        - It may generate repetitive text, often restating words or concepts.
+    - **1 (Moderate penalty)**:
+        - The model is moderately discouraged from repeating previously mentioned tokens.
+        - It encourages diversity and introduces more variety in generated content.
+    - **2 (High penalty)**:
+        - The model strongly avoids repeating tokens.
+        - This can result in highly varied language but may occasionally force unnatural word choices or sentence structures.
+
+### **Max Steps**
+
+- Defines the maximum number of steps for sequence generation.
+- Helps balance output length and processing time.
+- Example: Setting `Max Steps = 50` limits responses to 50 generation steps.
+
+### **Max Tokens**
+
+- Limits the maximum length of the generated response in tokens.
+- Includes both input and output tokens.
+- Example: Setting `Max Tokens = 256` restricts the output to a maximum of 256 tokens.
+
+### **3. Example Configurations**
+
+### **Creative Story Generation**
+
+- **System Prompt:** *“You are a creative writer.”*
+- **Temperature:** `0.9`
+- **Top P:** `0.95`
+- **Top K:** `1.4`
+- **Frequency Penalty:** `0.5`
+- **Presence Penalty:** `0.3`
+- **Max Steps:** `150`
+- **Max Tokens:** `500`
+
+### **Best Practices for Configuration**
+
+- Start with default settings and gradually adjust based on output.
+- Use lower temperature for tasks requiring accuracy and consistency.
+- Apply frequency penalties sparingly to balance response variation.
+- Test configurations thoroughly before deploying for end-users.
+
+By carefully tuning these settings, you can optimize model performance to suit various applications and user needs.
