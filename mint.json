@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "RabbitHoles",
   "logo": {
-    "dark": "/logo/logonew.jpeg",
-    "light": "/logo/logonew.jpeg"
+    "dark": "/logo/logoo.png",
+    "light": "/logo/logoo.png"
   }, 
   "topbarCtaButton": {
     "name": "Try it Now!",
@@ -48,7 +48,7 @@
       "pages": [
         "introduction",
         "installation",
-        "quickstart"
+        "licenseKey"
       ]
     },
     {
@@ -60,7 +60,8 @@
         "api-guides/xai",
         "api-guides/ollama",
         "api-guides/perplexity",
-        "api-guides/openrouter"
+        "api-guides/openrouter",
+        "api-guides/deepseek"
       ]
     },{
       "group": "Rabbitholes Constructs",
